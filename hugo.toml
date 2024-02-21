@@ -1,4 +1,16 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = "Jan's Blog "
+sectionPagesMenu = 'main'
 theme = 'ananke'
+enableEmoji = true
+
+
+
+[markup]
+  defaultMarkdownHandler = 'goldmark'
+
+[params]
+  [params.contact]
+    email = 'willbeforwardedtome.oasis081@passmail.net'
+

@@ -1,12 +1,40 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My New Hugo Site</title>
-    <link>https://example.org/</link>
-    <description>Recent content on My New Hugo Site</description>
+    <title>Jan&#39;s Blog </title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Jan&#39;s Blog </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate></lastBuildDate>
-    <atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 21 Feb 2024 17:47:52 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Wed, 21 Feb 2024 17:47:52 +0100</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>This blog To make start this blog, I thought about some basic guiding principles I want to try to follow:&#xA;Keep it fun and and not too serious Progress over perfection Focus on learning and curiosity The posts are not supposed to be extraordinarily extensive or in-depth. My goals with this blog are:&#xA;Learn about new topics Share findings about stuff I find interesting Sort and structure my thoughts Me I am a Data Engineer with a research background.</description>
+    </item>
+    <item>
+      <title>GenAI and Image Segmentation to spice up Presentations</title>
+      <link>http://localhost:1313/posts/presentation-workflow/</link>
+      <pubDate>Wed, 21 Feb 2024 17:47:52 +0100</pubDate>
+      <guid>http://localhost:1313/posts/presentation-workflow/</guid>
+      <description>I have been a happy and satisfied user of generative image models such as stable diffusion, midjourney and dalle for over one year now. Admittedly, when the outputs looked pixelated and bad, I did not get the appeal compared to discriminative models that can help with classification tasks.&#xA;While I have mainly used these models to create images of imaginary landscapes and futuristic cityscapes, I have learned to appreciate them for more productive uses recently.</description>
+    </item>
+    <item>
+      <title>Link Collection</title>
+      <link>http://localhost:1313/link-collection/</link>
+      <pubDate>Wed, 21 Feb 2024 17:47:52 +0100</pubDate>
+      <guid>http://localhost:1313/link-collection/</guid>
+      <description>Here will be a list of links</description>
+    </item>
+    <item>
+      <title>My First Post</title>
+      <link>http://localhost:1313/posts/finance/</link>
+      <pubDate>Wed, 21 Feb 2024 17:47:52 +0100</pubDate>
+      <guid>http://localhost:1313/posts/finance/</guid>
+      <description>Introduction This is bold text, and this is emphasized text.&#xA;Visit the Hugo website!&#xA;How does my first emoji look like? &amp;#x1f604;</description>
+    </item>
   </channel>
 </rss>
