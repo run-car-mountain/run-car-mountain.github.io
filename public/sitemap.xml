@@ -2,39 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://janroeder.me/</loc>
     <lastmod>2024-02-21T17:47:52+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/artifical-intelligence/</loc>
+    <loc>https://janroeder.me/posts/</loc>
     <lastmod>2024-02-21T17:47:52+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/presentation-workflow/</loc>
-    <lastmod>2024-02-21T17:47:52+01:00</lastmod>
+    <loc>https://janroeder.me/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2024-02-21T17:47:52+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/link-collection/</loc>
-    <lastmod>2024-02-21T17:47:52+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/money/</loc>
-    <lastmod>2024-02-21T17:47:52+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/finance/</loc>
-    <lastmod>2024-02-21T17:47:52+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2024-02-21T17:47:52+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/productivity/</loc>
-    <lastmod>2024-02-21T17:47:52+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/publications/</loc>
-    <lastmod>2024-02-21T17:47:52+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2024-02-21T17:47:52+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://janroeder.me/tags/</loc>
   </url>
 </urlset>
