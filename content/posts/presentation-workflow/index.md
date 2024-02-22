@@ -1,8 +1,12 @@
-+++
-title = 'GenAI and Image Segmentation to spice up Presentations'
-date = 2024-02-21T17:47:52+01:00
-draft = true
-+++
+---
+title: 'GenAI and Image Segmentation to spice up Presentations'
+date: 2024-02-21T17:47:52+01:00
+draft: true
+tags: 
+  - artifical intelligence
+  - productivity
+---
+
 
 I have been a happy and satisfied user of generative image models such as stable diffusion, midjourney and dalle for over one year now. Admittedly, when the outputs looked pixelated and bad, I did not get the appeal compared to discriminative models that can help with classification tasks.
 

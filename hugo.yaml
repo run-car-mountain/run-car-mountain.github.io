@@ -1,0 +1,59 @@
+baseURL: 'https://janroeder.me/'
+title: "Jan's Blog"
+theme: 'PaperMod'
+languageCode: 'en-us'
+enableEmoji: true
+sectionPagesMenu: 'main'
+# PaperMod specific
+ShowToc: true
+TocOpen: true
+
+
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  profileMode:
+    enabled: true
+    title: "Welcome to Jan's Blog" # optional default will be site title
+    subtitle: "Learn with me about artifical intelligence, natural language processing, software development and finance."
+    imageUrl: "home.jpg" # optional
+    imageTitle: "home image" # optional
+    imageWidth: 260 # custom size
+    imageHeight: 260 # custom size
+    buttons:
+      - name: About
+        url: "/about"
+      - name: Posts
+        url: "/posts"
+
+
+
+  homeInfoParams:
+    Title: Hi there wave
+    Content: Can be Info, links, about...
+  socialIcons:
+    - name: linkedin
+      url: "https://www.linkedin.com/in/jan-roeder-6529b2149"
+    - name: email
+      url: "mailto:6tpyfr13h@mozmail.com"
+
+  # for search
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
+    keys: ["title", "permalink", "summary", "content"]

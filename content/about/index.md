@@ -1,8 +1,8 @@
-+++
-title = 'About'
-date = 2024-02-21T17:47:52+01:00
-draft = true
-+++
+---
+title: "About"
+date: 2024-02-21T17:47:52+01:00
+draft: true
+---
 
 ## This blog
 
@@ -21,8 +21,7 @@ The posts are not supposed to be extraordinarily extensive or in-depth. My goals
 
 {{< images-side-by-side "rome.jpg" "Rome" "paris.jpg" "Paris" >}}
 
-I am a **Data Engineer** with a research background.
-Currently I work at Encavis AG in Hamburg, Germany.
+I am a **Data Engineer** with a research background and work at Encavis AG in Hamburg, Germany.
 Previously I was employed at an InsurTech startup.
 In my **PhD research**, I dealt with topics such as machine learning, natural language processing, deep learning, finance and credit risk. 
 Hence, I am interested in a broad range of topics. 
