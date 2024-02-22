@@ -39,8 +39,4 @@ Sometimes the task can be simplified drastically by specifying stuff like `"XYZ 
 [Segment Anything](https://segment-anything.com/)
 
 **Generated images**
-<!-- {{< image-resize src="futuristic_insurance_building_1.png" alt="slide with image" width="50%" >}} -->
-<!-- {{< image-resize src="futuristic_insurance_building_2.png" alt="slide with image" width="50%" >}} -->
 {{< images-side-by-side "futuristic_insurance_building_1.png" "Paris" "futuristic_insurance_building_2.png" "Rome" >}}
-
-<!-- ![slide with image](slide_with_image.png){:width="30%"}{:style="display:block; margin-left:auto; margin-right:auto"} -->

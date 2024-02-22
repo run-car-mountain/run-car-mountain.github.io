@@ -19,7 +19,7 @@ The posts are not supposed to be extraordinarily extensive or in-depth. My goals
 
 ## Me
 
-{{< images-side-by-side "paris.jpg" "Paris" "rome.jpg" "Rome" >}}
+{{< images-side-by-side "rome.jpg" "Rome" "paris.jpg" "Paris" >}}
 
 I am a **Data Engineer** with a research background.
 Currently I work at Encavis AG in Hamburg, Germany.
@@ -33,7 +33,7 @@ I did my Bachelor's and Master's degree in Business Information Systems (Wirtsch
 
 ## Short CV
 
-{{< image-resize src="cv_digital.png" alt="CV digital" width="50%" >}}
+{{< image-resize src="cv_digital.png" alt="CV digital" width="40%" >}}
 
 * 03/2024 - Current: Data Engineer, Encavis AG, Hamburg
 * 12/2022 - 02/2024: Data Engineer, SDA SE, Hamburg
