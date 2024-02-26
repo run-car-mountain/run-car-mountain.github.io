@@ -35,7 +35,11 @@ params:
       - name: Posts
         url: "/posts"
 
-
+markup:
+  defaultMarkdownHandler: "goldmark"
+  goldmark:
+    Extensions:
+      footnote: true
 
   homeInfoParams:
     Title: Hi there wave

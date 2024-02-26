@@ -34,10 +34,10 @@ I did my Bachelor's and Master's degree in Business Information Systems (Wirtsch
 
 {{< image-resize src="cv_digital.png" alt="CV digital" width="40%" >}}
 
-* 03/2024 - Current: Data Engineer, Encavis AG, Hamburg
-* 12/2022 - 02/2024: Data Engineer, SDA SE, Hamburg
-* 05/2017 - 11/2022: Doctoral Student, Chair of Electronic Finance and Digital Markets in Göttingen
-* 10/2014 – 04/2017: Master Studies in Business Information Systems, University of Göttingen
-* 09/2016 – 04/2017: Internship, Volkswagen AG: Group After Sales, Kassel
-* 04/2016 – 06/2016: Internship, Sycor GmbH: SAP Business Analytics, Göttingen
-* 04/2011 – 09/2014: Bachelor Studies in Business Information Systems, University of Göttingen
+| Timeframe         | Job                                                          |
+| ----------------- | ------------------------------------------------------------ |
+| 03/2024 – Today⠀⠀ | **Data Engineer**, Encavis AG, Hamburg                       |
+| 12/2022 – 02/2024 | **Data Engineer**, SDA SE, Hamburg                           |
+| 05/2017 – 11/2022 | **Doctoral Studies**, Chair of Electronic Finance and Digital Markets in Göttingen |
+| 10/2014 – 04/2017 | **Master Studies** in Business Information Systems, University of Göttingen. Internships at Volkswagen AG and Sycor GmbH |
+| 04/2011 – 09/2014 | **Bachelor Studies** in Business Information Systems, University of Göttingen |
