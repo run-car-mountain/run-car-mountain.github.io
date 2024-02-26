@@ -8,38 +8,19 @@ sectionPagesMenu: 'main'
 ShowToc: true
 TocOpen: true
 
-
-
 enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
 buildExpired: false
 
 
-minify:
-  disableXML: true
-  minifyOutput: true
-
-params:
-  profileMode:
-    enabled: true
-    title: "Welcome to Jan's Blog" # optional default will be site title
-    subtitle: "Learn with me about artifical intelligence, natural language processing, software development and finance."
-    imageUrl: "home.jpg" # optional
-    imageTitle: "home image" # optional
-    imageWidth: 260 # custom size
-    imageHeight: 260 # custom size
-    buttons:
-      - name: About
-        url: "/about"
-      - name: Posts
-        url: "/posts"
-
 markup:
   defaultMarkdownHandler: "goldmark"
   goldmark:
     Extensions:
       footnote: true
+    renderer:
+      unsafe: true
 
   homeInfoParams:
     Title: Hi there wave
@@ -61,3 +42,22 @@ markup:
     minMatchCharLength: 0
     limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
     keys: ["title", "permalink", "summary", "content"]
+    
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  profileMode:
+    enabled: true
+    title: "Welcome to Jan's Blog" # optional default will be site title
+    subtitle: "Learn with me about artifical intelligence, natural language processing, software development and finance."
+    imageUrl: "home.jpg" # optional
+    imageTitle: "home image" # optional
+    imageWidth: 260 # custom size
+    imageHeight: 260 # custom size
+    buttons:
+      - name: About
+        url: "/about"
+      - name: Posts
+        url: "/posts"
