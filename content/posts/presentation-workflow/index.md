@@ -3,9 +3,8 @@ title: 'GenAI and Image Segmentation to spice up Presentations'
 date: 2024-02-22T12:00:00+00:00
 draft: false
 cover:
-  image: "slide_with_image.png"
+  image: "images/slide_with_image.png"
   alt: "slide with image"
-  caption: "slide with image"
 tags: 
   - GenAI
   - productivity
@@ -33,7 +32,7 @@ For example, the following images were created with variants of the following pr
 > *Create the image of a futuristic insurance building. It has glass walls. In the inside can be seen a large digital brain that represents an AI that enhances the decisions of the firm. The interior should look modern and cozy, as is typical for a modern tech company. Perspective from outside looking in. On the top of the building is a sign that says "Super Insurance". Make sure that it is a perspective from outside overlooking the whole building.*
 
 **Generated images**
-{{< images-side-by-side "futuristic_insurance_building_1.png" "Paris" "futuristic_insurance_building_2.png" "Rome" >}}
+{{< images-side-by-side "images/futuristic_insurance_building_1.png" "Paris" "images/futuristic_insurance_building_2.png" "Rome" >}}
 
 ## Removing the background
 
@@ -58,10 +57,10 @@ I am assuming that this functionality will be integrated into a variety of web a
 This image shows the positive (green) and negative (red) markers that you can use to mark the outline of the object.
 Due to the pattern recognition embedded into the model, in many cases only few markers are even necessary.
 
-{{< image-resize src="segment_anything_workflow.png" alt="slide with image" width="70%" >}}
+{{< image-resize src="images/segment_anything_workflow.png" alt="slide with image" width="70%" >}}
 
 **Cropped Image on Presentation Slide**
-{{< image-resize src="slide_with_image.png" alt="slide with image" width="70%" >}}
+{{< image-resize src="images/slide_with_image.png" alt="slide with image" width="70%" >}}
 
 # Links
 [^ganexample]: https://blog.research.google/2017/04/teaching-machines-to-draw.html?m=1

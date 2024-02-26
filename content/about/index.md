@@ -19,7 +19,7 @@ The posts are not supposed to be extraordinarily extensive or in-depth. My goals
 
 ## Me
 
-{{< images-side-by-side "rome.jpg" "Rome" "paris.jpg" "Paris" >}}
+{{< images-side-by-side "images/rome.jpg" "Rome" "images/paris.jpg" "Paris" >}}
 
 I am a **Data Engineer** with a research background and work at Encavis AG in Hamburg, Germany.
 Previously I was employed at an InsurTech startup.
@@ -32,7 +32,7 @@ I did my Bachelor's and Master's degree in Business Information Systems (Wirtsch
 
 ## Short CV
 
-{{< image-resize src="cv_digital.png" alt="CV digital" width="40%" >}}
+{{< image-resize src="images/cv_digital.png" alt="CV digital" width="40%" >}}
 
 | Timeframe         | Job                                                          |
 | ----------------- | ------------------------------------------------------------ |
