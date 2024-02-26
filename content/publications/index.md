@@ -1,7 +1,7 @@
 +++
 title = 'Publications'
 date = 2024-02-21T17:47:52+01:00
-draft = true
+draft = false
 +++
 
 {{< image-resize src="book_digital.png" alt="book digital" width="50%" >}}

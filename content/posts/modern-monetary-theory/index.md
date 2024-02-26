@@ -1,12 +1,9 @@
 +++
-title = 'My First Post'
+title = 'Modern Monetary Theory'
 date = 2024-02-21T17:47:52+01:00
-draft = true
+draft = false
 +++
-## Introduction
 
-This is **bold** text, and this is *emphasized* text.
+# What is it
 
-Visit the [Hugo](https://gohugo.io) website!
-
-How does my first emoji look like? :smile:
+This post is about modern monetary theory

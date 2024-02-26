@@ -1,7 +1,7 @@
 ---
 title: 'GenAI and Image Segmentation to spice up Presentations'
 date: 2024-02-22T12:00:00+00:00
-draft: true
+draft: false
 cover:
   image: "slide_with_image.png"
   alt: "slide with image"
