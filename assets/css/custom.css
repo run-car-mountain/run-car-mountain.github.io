@@ -1,6 +1,0 @@
-.centered-image img {
-    width: 50%;
-    height: auto;
-    margin: 0 auto;
-    display: block; /* This makes margin auto effective for centering */
-}

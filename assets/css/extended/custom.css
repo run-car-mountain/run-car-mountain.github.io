@@ -1,0 +1,13 @@
+/* .centered-image img {
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    display: block; /* This makes margin auto effective for centering */
+/* } */
+
+.entry-cover img {
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

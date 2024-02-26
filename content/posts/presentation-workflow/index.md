@@ -57,7 +57,7 @@ I am assuming that this functionality will be integrated into a variety of web a
 This image shows the positive (green) and negative (red) markers that you can use to mark the outline of the object.
 Due to the pattern recognition embedded into the model, in many cases only few markers are even necessary.
 
-{{< image-resize src="images/segment_anything_workflow.png" alt="slide with image" width="70%" >}}
+{{< image-resize src="images/segment_anything_workflow.png" alt="slide with image" width="60%" >}}
 
 **Cropped Image on Presentation Slide**
 {{< image-resize src="images/slide_with_image.png" alt="slide with image" width="70%" >}}
