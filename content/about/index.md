@@ -13,9 +13,9 @@ To make start this blog, I thought about some basic guiding principles I want to
 
 The posts are not supposed to be extraordinarily extensive or in-depth. My goals with this blog are: 
 
-1. Learn about new topics
-2. Share findings about stuff I find interesting
-3. Sort and structure my thoughts
+- Learn about new topics
+- Share findings about stuff I find interesting
+- Sort and structure my thoughts
 
 ## Me
 

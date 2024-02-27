@@ -11,3 +11,29 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+/* .list{ */
+    /* background-color: rgb(100, 53, 53); */
+    
+    /* background-image: url("background_image.png"); */
+/* } */
+
+/* body#top.list{
+    /* background-color: rgb(35, 14, 231); */
+    /* background-image: url("/background_image.png"); */
+/* } */ 
+
+/* .main .profile{
+    /* background-color: rgb(35, 14, 231); */
+    /* background-image: url("/background_image.png"); */
+
+/* main.main{
+    background-image: url("/background_image.png");
+    /* background-color: rgb(35, 14, 231); */
+/* } *
+
+/* #homepage-content-abc */
+
+#homepage-content{
+    background-image: url("/background_image.png");
+}

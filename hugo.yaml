@@ -5,8 +5,7 @@ languageCode: 'en-us'
 enableEmoji: true
 sectionPagesMenu: 'main'
 # PaperMod specific
-ShowToc: true
-TocOpen: true
+disableThemeToggle: true
 
 enableRobotsTXT: true
 buildDrafts: false
@@ -48,6 +47,7 @@ minify:
   minifyOutput: true
 
 params:
+  disableThemeToggle: true
   profileMode:
     enabled: true
     title: "Welcome to Jan's Blog" # optional default will be site title
@@ -61,3 +61,5 @@ params:
         url: "/about"
       - name: Posts
         url: "/posts"
+  ShowToc: true
+  TocOpen: true
