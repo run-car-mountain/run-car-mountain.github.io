@@ -51,8 +51,8 @@ params:
   profileMode:
     enabled: true
     title: "Welcome to Jan's Blog" # optional default will be site title
-    subtitle: "Learn with me about artifical intelligence, natural language processing, software development and finance."
-    imageUrl: "home.jpg" # optional
+    subtitle: "Learn with me about software development, artifical intelligence, natural language processing, and finance."
+    imageUrl: "" # optional
     imageTitle: "home image" # optional
     imageWidth: 260 # custom size
     imageHeight: 260 # custom size

@@ -1,9 +1,4 @@
-/* .centered-image img {
-    width: 50%;
-    height: auto;
-    margin: 0 auto;
-    display: block; /* This makes margin auto effective for centering */
-/* } */
+/* Main entry page styling */
 
 .entry-cover img {
     width: 60%;
@@ -12,28 +7,16 @@
     margin-right: auto;
 }
 
-/* .list{ */
-    /* background-color: rgb(100, 53, 53); */
-    
-    /* background-image: url("background_image.png"); */
-/* } */
-
-/* body#top.list{
-    /* background-color: rgb(35, 14, 231); */
-    /* background-image: url("/background_image.png"); */
-/* } */ 
-
-/* .main .profile{
-    /* background-color: rgb(35, 14, 231); */
-    /* background-image: url("/background_image.png"); */
-
-/* main.main{
-    background-image: url("/background_image.png");
-    /* background-color: rgb(35, 14, 231); */
-/* } *
-
-/* #homepage-content-abc */
-
 #homepage-content{
     background-image: url("/background_image.png");
+}
+
+.profile_inner > h1 {
+    color: white;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+.profile_inner > span {
+    color: white;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }

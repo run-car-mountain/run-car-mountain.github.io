@@ -1,7 +1,7 @@
 ---
 title: 'Experiments with Dreambooth'
 date: 2024-02-24
-draft: false
+draft: true
 cover:
   image: "images/dreambooth-cover.png"
   alt: "futuristic dreambooth"

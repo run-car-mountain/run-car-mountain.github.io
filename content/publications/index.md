@@ -1,6 +1,5 @@
 +++
 title = 'Publications'
-date = 2024-02-21T17:47:52+01:00
 draft = false
 +++
 
@@ -34,7 +33,7 @@ draft = false
 
 *Title*: **Verrechnungspreise und Digitalisierung II. Empirische Analyse – Konsequenzen für die transaktionsbezogene Gewinnaufteilung.**  
 *Authors*: Oestreicher, A., Muntermann, J., Schwager, R., Mewes, P., Palmer, M., Roeder, J., Rottner, F. 2020.  
-*Outlet*: ifst-Schrift 537, Berlin: Institut Finanzen und Steuern&nbsp;e.V., [ifst-Schriften](https://cdn.website-editor.net/s/cf934dd639f2413b9350f569d1cdeeba/files/uploaded/537.pdf?Expires=1702562830&Signature=rO~rMitVIeJbBE8OQOGXE3kFlqdZUkYNSYNpKh-nNIivY0DxcBekYEWRkSwjUVjLpD9TYHTi8ry5MYvcXxOFGg7MDHv7gZjkV3aqmOaSq9ItWEKI2RR7ynNxrTqH9ImZmfTw8nOloMyXIXugggTl2sruAFUuqhv1Nq-7l2NuIPQH28Z02Gkz7db02DzuAo7CEt6SZ9RqtSEiEquXoz-vFz~31jgK4OYPbKlLYwI0R-PTNypsxuBCZM7GRzTDEE6-A9exHSe1pnOTGa7umULoBnKYLvV7hcburrCFLozoClwfjl0Ml-XphKJeBa-xiJboOPJFLFo72AmZjYnc1djVqA__&Key-Pair-Id=K2NXBXLF010TJW)  
+*Outlet*: ifst-Schrift 537, Berlin: Institut Finanzen und Steuern&nbsp;e.V., [ifst-Schriften](https://www.ifst.de/schriften)  
 *Keywords*: Verrechnungspreise, Digitalisierung  
 
 *Title*: **Towards Automated Analysis of Financial Analyst Communication: The Induction of a Domain-Specific Sentiment Dictionary.**  

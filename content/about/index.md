@@ -1,6 +1,5 @@
 ---
 title: "About"
-date: 2024-02-21T17:47:52+01:00
 draft: false
 ---
 
@@ -23,16 +22,15 @@ The posts are not supposed to be extraordinarily extensive or in-depth. My goals
 
 I am a **Data Engineer** with a research background and work at Encavis AG in Hamburg, Germany.
 Previously I was employed at an InsurTech startup.
-In my **PhD research**, I dealt with topics such as machine learning, natural language processing, deep learning, finance and credit risk. 
-Hence, I am interested in a broad range of topics. 
-The **Python** language is one  and the associated **data science ecosystem** (pandas, numpy, scikit-learn, matplotlib, statsmodels, ...). 
-But I am generally interested in how to store, process and analyze data.
+In my **PhD research**, I dealt with topics such as machine learning, natural language processing, deep learning, finance and credit risk. Therefore, I was a big fan of **Python** and the associated **data science ecosystem** (pandas, numpy, scikit-learn, matplotlib, statsmodels, ...).
+At the moment I focus mostly on developing robust software and I am continously learning how to store, process and analyze data of various kinds.
 I did my Bachelor's and Master's degree in Business Information Systems (Wirtschaftsinformatik) at the University of Göttingen.
 
+Topics I currently try to learn about: *Rust, monetary policy in the EU and US, keeping up with recent AI research*
 
 ## Short CV
 
-{{< image-resize src="images/cv_digital.png" alt="CV digital" width="40%" >}}
+{{< image-resize src="images/cv_digital.png" alt="CV digital" width="26%" >}}
 
 | Timeframe         | Job                                                          |
 | ----------------- | ------------------------------------------------------------ |
