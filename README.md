@@ -7,5 +7,6 @@
 # Debugging Locally
 - `hugo server -D` for local debugging to show drafts as well
 
-
+# Rebuild link-collection
+- `(cd scripts/python && uv run link_collection_converter.py)`
 
