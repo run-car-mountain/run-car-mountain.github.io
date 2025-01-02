@@ -1,6 +1,7 @@
 ---
 title: "About"
 draft: false
+menus: main
 ---
 
 ## This blog

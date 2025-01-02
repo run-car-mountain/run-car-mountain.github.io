@@ -1,9 +1,10 @@
 ---
 title: 'Link collection'
 draft: false
-cover:
-  image: "images/dreambooth-cover.png"
-  alt: "futuristic dreambooth"
+# cover:
+#   image: "images/dreambooth-cover.png"
+#   alt: "futuristic dreambooth"
+menus: main
 tags: 
   - Links
 ---

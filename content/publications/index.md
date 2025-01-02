@@ -1,7 +1,8 @@
-+++
-title = 'Publications'
-draft = false
-+++
+---
+title: 'Publications'
+menus: main
+draft: false
+---
 
 {{< image-resize src="book_digital.png" alt="book digital" width="50%" >}}
 
