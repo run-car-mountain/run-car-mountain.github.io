@@ -11,6 +11,8 @@ ShowToc: true
 TocOpen: true
 ---
 
+{{< image-resize src="link_collection.jpg" alt="book digital" width="50%" >}}
+
 This page is an assortment of interesting links and ressources I collect over time.
 Links to the major topics:
 
