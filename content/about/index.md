@@ -37,7 +37,7 @@ Topics I currently try to learn about: *Rust, monetary policy in the EU and US, 
 
 ## Short CV
 
-{{< image-resize src="images/cv_digital.png" alt="CV digital" width="26%" >}}
+{{< image-resize src="images/cv_digital.jpg" alt="CV digital" width="26%" >}}
 
 | Timeframe         | Job                                                          |
 | ----------------- | ------------------------------------------------------------ |
