@@ -5,6 +5,10 @@
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+  
+    /* Extend to full viewport width */
+    width: 60vw;
+    margin-left: calc(50% - 30vw);
 }
 
 .profile_inner > h1 {
