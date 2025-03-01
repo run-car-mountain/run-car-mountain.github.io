@@ -1,14 +1,10 @@
 /* Main entry page styling */
 
-.entry-cover img {
-    width: 60%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#homepage-content{
+#homepage-content {
     background-image: url("/background_image.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .profile_inner > h1 {
