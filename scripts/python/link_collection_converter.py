@@ -4,6 +4,7 @@ import pandas as pd
 dir_data = Path("../../data")
 
 df = pd.read_excel(dir_data / "link_collection.xlsx")
+df = df.dropna(how="all")
 
 html_lines = []
 toc_lines = []
@@ -52,6 +53,8 @@ for index, row in df.iterrows():
 final_html_lines = ["<ul>"] + toc_lines + ["</ul>"] + html_lines
 
 # Write out to a single HTML file
-with open("../../content/link-collection/link_collection.html", "w", encoding="utf-8") as f:
+fpath_out = Path("../../content/link-collection/link_collection.html")
+with open(fpath_out, "w", encoding="utf-8") as f:
     for line in final_html_lines:
         f.write(line + "\n")
+print("wrote to ", fpath_out.absolute())
