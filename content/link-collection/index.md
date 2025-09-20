@@ -4,7 +4,9 @@ draft: false
 # cover:
 #   image: "images/dreambooth-cover.png"
 #   alt: "futuristic dreambooth"
-menus: main
+menus:
+  main:
+    weight: 20
 tags: 
   - Links
 ShowToc: true
@@ -17,4 +19,3 @@ This page is an assortment of interesting links and ressources I collect over ti
 Links to the major topics:
 
 {{< include "link_collection.html" >}}
-

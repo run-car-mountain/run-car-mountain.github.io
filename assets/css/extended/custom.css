@@ -40,3 +40,62 @@
 .preserve-formatting br {
     line-height: 0.2;
 }
+
+/* Books recommendation grid */
+
+.books-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.book-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1.5rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--entry);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.book-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.book-title {
+    margin: 0;
+}
+
+.book-author {
+    margin: -0.5rem 0 0 0;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.book-keywords {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--secondary);
+}
+
+.book-description {
+    margin: 0;
+    line-height: 1.55;
+}
+
+@media (max-width: 680px) {
+    .book-card {
+        padding: 1.25rem;
+    }
+}
+
+.books-grid__empty {
+    margin-top: 1.5rem;
+    font-style: italic;
+    color: var(--secondary);
+}

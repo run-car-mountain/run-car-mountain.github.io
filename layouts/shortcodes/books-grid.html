@@ -1,0 +1,27 @@
+{{- $books := .Page.Params.books -}}
+{{- if not $books -}}
+<p class="books-grid__empty">Add book entries in the front matter to show your recommendations.</p>
+{{- else -}}
+<div class="books-grid">
+  {{- range $books }}
+    {{- $title := .title | default "Untitled" -}}
+    {{- $author := .author -}}
+    {{- $keywords := .keywords -}}
+    {{- $description := .description -}}
+    <article class="book-card">
+      <div class="book-body">
+        <h3 class="book-title">{{ $title }}</h3>
+        {{- with $author }}
+          <p class="book-author">{{ . }}</p>
+        {{- end }}
+        {{- with $keywords }}
+          <p class="book-keywords"><strong>Keywords:</strong> {{ . }}</p>
+        {{- end }}
+        {{- with $description }}
+          <p class="book-description">{{ . }}</p>
+        {{- end }}
+      </div>
+    </article>
+  {{- end }}
+</div>
+{{- end -}}

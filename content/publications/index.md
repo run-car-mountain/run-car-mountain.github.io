@@ -1,6 +1,8 @@
 ---
 title: 'Publications'
-menus: main
+menus:
+  main:
+    weight: 50
 draft: false
 ---
 

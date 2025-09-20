@@ -1,7 +1,9 @@
 ---
 title: "About"
 draft: false
-menus: main
+menus:
+  main:
+    weight: 10
 ---
 
 ## This blog
