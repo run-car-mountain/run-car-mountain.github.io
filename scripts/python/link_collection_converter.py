@@ -41,10 +41,7 @@ def category_anchor(category: str) -> str:
 def generate_sections(df: pd.DataFrame) -> Tuple[List[str], List[str]]:
     """Return the (toc_lines, html_lines) generated from the link rows."""
 
-    toc_lines: List[str] = []
-    html_lines: List[str] = []
-    current_category: Optional[str] = None
-
+    entries = []
     for _, row in df.iterrows():
         category = optional_text(row.get("category"))
         title = optional_text(row.get("title"))
@@ -54,6 +51,27 @@ def generate_sections(df: pd.DataFrame) -> Tuple[List[str], List[str]]:
         if not category or not title or not url:
             continue
 
+        entries.append(
+            {
+                "category": category,
+                "title": title,
+                "url": url,
+                "author": optional_text(row.get("author")),
+                "keywords": optional_text(row.get("keywords")),
+                "comment": optional_text(row.get("comment")),
+                "media": optional_text(row.get("media")),
+                "date": optional_text(row.get("date")),
+            }
+        )
+
+    entries.sort(key=lambda entry: (entry["category"].lower(), entry["title"].lower()))
+
+    toc_lines: List[str] = []
+    html_lines: List[str] = []
+    current_category: Optional[str] = None
+
+    for entry in entries:
+        category = entry["category"]
         if category != current_category:
             if current_category is not None:
                 html_lines.append('<br class="small-break">')
@@ -62,27 +80,25 @@ def generate_sections(df: pd.DataFrame) -> Tuple[List[str], List[str]]:
             toc_lines.append(f'<li><a href="#{anchor}">{category}</a></li>')
             current_category = category
 
-        author = optional_text(row.get("author"))
-        keywords = optional_text(row.get("keywords"))
-        comment = optional_text(row.get("comment"))
-        media = optional_text(row.get("media"))
-        date = optional_text(row.get("date"))
-
-        title_line = f'<a href="{url}">{title}</a>'
-        if author:
-            title_line += f" | {author}"
+        title_line = f'<a href="{entry["url"]}">{entry["title"]}</a>'
+        if entry["author"]:
+            title_line += f" | {entry['author']}"
         html_lines.append(f"<p>{title_line}</p>")
 
-        if keywords:
-            html_lines.append(f"<p><strong>keywords:</strong> {keywords}</p>")
-        if comment:
-            html_lines.append(f"<p><strong>comment:</strong> {comment}</p>")
+        if entry["keywords"]:
+            html_lines.append(
+                f"<p><strong>keywords:</strong> {entry['keywords']}</p>"
+            )
+        if entry["comment"]:
+            html_lines.append(
+                f"<p><strong>comment:</strong> {entry['comment']}</p>"
+            )
 
         info_line = []
-        if media:
-            info_line.append(media)
-        if date:
-            info_line.append(date)
+        if entry["media"]:
+            info_line.append(entry["media"])
+        if entry["date"]:
+            info_line.append(entry["date"])
         if info_line:
             html_lines.append(f"<p><strong>info:</strong> {' | '.join(info_line)}</p>")
 
