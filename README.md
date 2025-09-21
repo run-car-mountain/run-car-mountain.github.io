@@ -5,8 +5,9 @@
 - `git submodule update --remote --merge`
 
 # Debugging Locally
-- `hugo server -D` for local debugging to show drafts as well
+- `make debug` to run `hugo server -D` with drafts enabled
+- `make server` to run `hugo server` with published content only
 
 # Rebuild link-collection
-- `(cd scripts/python && uv run link_collection_converter.py)`
+- `make link-collection` or `(cd scripts/python && uv run link_collection_converter.py)`
 
