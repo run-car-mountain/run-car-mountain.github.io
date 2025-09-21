@@ -9,33 +9,31 @@ menus:
 ## This blog
 
 To start this blog, I came up with some basic guiding principles:
-- Keep it fun and and not too serious
+- Keep it fun and not too serious
 - Progress over perfection
 - Focus on learning and curiosity
 
-The posts are not supposed to be extraordinarily extensive or in-depth. My goals with this blog are: 
-
+Posts on this blog are meant to be concise rather than exhaustive. My goals are: 
 - Learn about new topics
-- Share findings about stuff I find interesting
-- Sort and structure my thoughts
+- Share findings on topics I find interesting
+- Organize my thoughts
 
 ## Me
 
 {{< images-side-by-side "images/rome.jpg" "Rome" "images/paris.jpg" "Paris" >}}
-{{< images-side-by-side "images/seoul_namsan.jpg" "Rome" "images/seoul_namdaemun.jpg" "Paris" >}}
+{{< images-side-by-side "images/seoul_namsan.jpg" "Seoul – Namsan" "images/seoul_namdaemun.jpg" "Seoul – Namdaemun" >}}
+I’m a **Data Engineer** with a research background and work at Encavis AG in Hamburg, a company focused on renewable energy (solar and wind). 
+My main interests are databases, data pipelines, and writing robust code in Python, SQL (dbt), and Rust.
+My **PhD research** focused on credit risk, where I applied methods from machine learning, natural language processing, deep learning, and statistics. 
 
-I am a **Data Engineer** with a research background and work at Encavis AG in Hamburg, Germany.
-My main interests are databases, data pipelines and writing robust code (in Python, SQL or Rust).
-My **PhD research** emphasized topics in the areas of machine learning, natural language processing, deep learning, finance and credit risk. 
+Because I enjoyed building databases and data pipelines, I chose to focus on data engineering.
+This background helps me anticipate the needs of data science and business intelligence colleagues.
 
-Because I enjoyed the work on the database and data pipeline side so much, I decided to focus on data engineering work.
-This gives me an interesting perspective because it helps to anticipate the needs and requirements of Data Science and Business Intelligence colleagues.
+In addition, I’m proficient with Terraform and the Snowflake platform.
+My research also took me deep into the **Python data science ecosystem** (pandas, NumPy, scikit-learn, matplotlib, statsmodels, ...).
+I earned my Bachelor's and Master's degrees in Business Information Systems (Wirtschaftsinformatik) at the University of Göttingen.
 
-At the moment I am focusing heavily on Python, SQL and Rust.
-But the research work helped me learn a lot about the **Python data science ecosystem** (pandas, numpy, scikit-learn, matplotlib, statsmodels, ...).
-I did my Bachelor's and Master's degree in Business Information Systems (Wirtschaftsinformatik) at the University of Göttingen.
-
-Topics I currently try to learn about: *Rust, monetary policy in the EU and US, keeping up with recent AI research*
+Topics I'm currently exploring: Rust, monetary policy in the EU and US, and recent AI research.
 
 ## Short CV
 
@@ -43,8 +41,9 @@ Topics I currently try to learn about: *Rust, monetary policy in the EU and US, 
 
 | Timeframe         | Job                                                          |
 | ----------------- | ------------------------------------------------------------ |
-| 03/2024 – Today⠀⠀ | **Data Engineer**, Encavis AG, Hamburg                       |
+| 03/2024 – Present | **Data Engineer**, Encavis AG, Hamburg                       |
 | 12/2022 – 02/2024 | **Data Engineer**, SDA SE, Hamburg                           |
-| 05/2017 – 11/2022 | **PhD in Business Information Systems**, Chair of Electronic Finance and Digital Markets in Göttingen |
-| 10/2014 – 04/2017 | **Master Studies** in Business Information Systems, University of Göttingen. Internships at Volkswagen AG and Sycor GmbH |
+| 05/2017 – 11/2022 | **PhD in Business Information Systems**, Chair of Electronic Finance and Digital Markets, University of Göttingen |
+| 10/2014 – 04/2017 | **Master's studies** in Business Information Systems, University of Göttingen; internships at Volkswagen AG and Sycor GmbH |
+| 04/2011 – 09/2014 | **Bachelor's studies** in Business Information Systems, University of Göttingen |
 | 04/2011 – 09/2014 | **Bachelor Studies** in Business Information Systems, University of Göttingen |
