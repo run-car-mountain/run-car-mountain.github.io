@@ -1,110 +1,430 @@
-/* Main entry page styling */
+/* ========================================
+   1) Design Tokens
+   ======================================== */
 
-#homepage-content {
-    background-image: url("/background_image.jpg");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+:root,
+body.dark {
+    --theme: #f4f8ff;
+    --entry: #fcfdff;
+    --primary: #121b2a;
+    --secondary: #4d5e78;
+    --tertiary: #d6e1f1;
+    --content: #1f2c43;
+    --code-block-bg: #edf3ff;
+    --code-bg: #e8f0ff;
+    --border: #cbd9ef;
+    --radius: 18px;
+    --main-width: 940px;
 
-    /* Extend to full viewport width */
-    width: 60vw;
-    margin-left: calc(50% - 30vw);
+    --accent-cyan: #00c7e8;
+    --accent-magenta: #ff437f;
+    --accent-amber: #ffb545;
+
+    --bg-haze-1: rgba(0, 199, 232, 0.12);
+    --bg-haze-2: rgba(255, 67, 127, 0.08);
+    --grid-line: rgba(44, 83, 131, 0.09);
+
+    --shadow-soft: 0 14px 34px rgba(21, 40, 69, 0.11);
+    --shadow-hover: 0 18px 42px rgba(15, 31, 56, 0.18);
 }
 
-@media only screen and (max-width: 768px) {
-    #homepage-content {
-        width: 100vw;
-        margin-left: calc(50% - 50vw);
-        margin-right: calc(50% - 50vw);
-        background-size: cover;
-        background-position: center 25%;
-    }
+/* ========================================
+   2) Base Typography + Atmosphere
+   ======================================== */
 
-    .main .profile {
-        min-height: 70vh;
-        padding-top: 3rem;
-        padding-bottom: 3rem;
-    }
+body {
+    font-family: "Space Grotesk", "Segoe UI", sans-serif;
+    color: var(--content);
+    background-color: var(--theme);
+    background-image:
+        radial-gradient(circle at 18% 14%, var(--bg-haze-1) 0%, transparent 36%),
+        radial-gradient(circle at 81% 8%, var(--bg-haze-2) 0%, transparent 33%),
+        repeating-linear-gradient(0deg, var(--grid-line) 0 1px, transparent 1px 52px),
+        repeating-linear-gradient(90deg, var(--grid-line) 0 1px, transparent 1px 52px),
+        linear-gradient(145deg, #f7fbff 0%, #eef4ff 100%);
+    background-attachment: fixed;
+}
+
+h1,
+h2,
+h3,
+.logo a,
+.page-header h1,
+.profile_inner h1 {
+    font-family: "Orbitron", "Space Grotesk", sans-serif;
+    letter-spacing: 0.02em;
+}
+
+a {
+    color: #016c9b;
+}
+
+a:hover {
+    color: #054f74;
+}
+
+/* ========================================
+   3) Shell (Header, Navigation, Main)
+   ======================================== */
+
+.header {
+    border-bottom: 1px solid rgba(67, 99, 143, 0.18);
+    background: rgba(248, 252, 255, 0.84);
+    backdrop-filter: blur(8px);
+}
+
+.nav {
+    max-width: calc(var(--main-width) + 44px);
+}
+
+.logo a {
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+#menu a {
+    border-radius: 999px;
+    padding: 0.3rem 0.72rem;
+    color: var(--secondary);
+    border: 1px solid transparent;
+    transition: border-color 0.2s ease, color 0.2s ease, background-color 0.2s ease;
+}
+
+#menu a:hover,
+#menu a.active {
+    color: var(--primary);
+    border-color: rgba(0, 199, 232, 0.35);
+    background: rgba(0, 199, 232, 0.1);
+}
+
+.main {
+    max-width: calc(var(--main-width) + 44px);
+}
+
+/* ========================================
+   4) Homepage Hero
+   ======================================== */
+
+#homepage-content {
+    width: min(1110px, calc(100vw - 2rem));
+    margin: 1.25rem auto 2rem;
+    border-radius: 24px;
+    border: 1px solid rgba(182, 203, 234, 0.85);
+    box-shadow: var(--shadow-soft);
+    background-image:
+        linear-gradient(125deg, rgba(8, 20, 36, 0.22), rgba(10, 32, 56, 0.14)),
+        linear-gradient(95deg, rgba(0, 199, 232, 0.18), rgba(255, 67, 127, 0.14)),
+        url("/background_image.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main .profile {
+    min-height: 74vh;
+    padding: 4.6rem 1.6rem;
+}
+
+.profile_inner {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 2rem;
+    border: 1px solid rgba(215, 236, 255, 0.46);
+    border-radius: 20px;
+    background: linear-gradient(
+        140deg,
+        rgba(7, 18, 33, 0.38) 0%,
+        rgba(10, 31, 52, 0.18) 100%
+    );
+    backdrop-filter: blur(5px) saturate(126%);
+    -webkit-backdrop-filter: blur(5px) saturate(126%);
+    box-shadow: 0 18px 42px rgba(11, 24, 45, 0.26);
 }
 
 .profile_inner > h1 {
-    color: white;
-    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    color: #f4fbff;
+    margin-bottom: 0.8rem;
+    text-shadow: 0 4px 16px rgba(0, 0, 0, 0.46);
 }
 
 .profile_inner > span {
-    color: white;
-    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    color: #d9edff;
+    line-height: 1.55;
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.42);
 }
 
-.preserve-formatting p {
-    margin-bottom: 0px; /* Adjust this value as needed */
+.social-icons a {
+    border: 1px solid rgba(186, 231, 255, 0.42);
+    border-radius: 999px;
+    padding: 0.25rem;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.social-icons a:hover {
+    border-color: rgba(220, 244, 255, 0.8);
+    transform: translateY(-2px);
+}
+
+.profile .buttons .button {
+    border: 1px solid rgba(185, 236, 255, 0.55);
+    border-radius: 999px;
+    background: linear-gradient(120deg, rgba(0, 199, 232, 0.28), rgba(255, 67, 127, 0.24));
+    color: #f3fbff;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.profile .buttons .button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 22px rgba(9, 20, 40, 0.34);
+}
+
+/* ========================================
+   5) Cards + Post Lists
+   ======================================== */
+
+.post-entry,
+.first-entry {
+    border: 1px solid rgba(190, 209, 235, 0.92);
+    border-radius: 20px;
+    background: rgba(252, 254, 255, 0.92);
+    box-shadow: 0 12px 28px rgba(27, 48, 80, 0.08);
+    transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+}
+
+.post-entry:hover,
+.first-entry:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-hover);
+    border-color: rgba(0, 199, 232, 0.48);
+}
+
+.entry-header h2 {
+    color: #12223b;
+}
+
+.entry-content p {
+    color: #2a3a55;
+}
+
+.entry-footer,
+.post-meta {
+    color: #4b6282;
+}
+
+/* ========================================
+   6) Post Content + TOC
+   ======================================== */
+
+.post-content {
+    font-size: 1.03rem;
+    line-height: 1.82;
+}
+
+.post-content h2,
+.post-content h3 {
+    color: #0f243f;
+}
+
+.post-content h2 {
+    border-left: 4px solid var(--accent-cyan);
+    padding-left: 0.65rem;
+}
+
+.post-content blockquote {
+    margin: 1.2rem 0;
+    border-left: 4px solid var(--accent-magenta);
+    background: rgba(255, 67, 127, 0.07);
+    border-radius: 0 14px 14px 0;
+}
+
+.post-content code {
+    border: 1px solid rgba(183, 202, 231, 0.95);
+}
+
+aside {
+    margin: 1.6rem 0;
+    border: 1px solid rgba(177, 201, 233, 0.94);
+    border-left: 4px solid var(--accent-cyan);
+    border-radius: 16px;
+    background: rgba(247, 251, 255, 0.94);
+    box-shadow: 0 10px 24px rgba(27, 49, 84, 0.09);
+}
+
+aside header {
+    padding: 1rem 1rem 0;
+}
+
+aside h2 {
+    margin: 0;
+    color: #153152;
+    font-size: 0.98rem;
+}
+
+aside nav {
+    padding: 0.7rem 1rem 1rem;
+}
+
+aside a {
+    color: #1f466d;
+}
+
+/* ========================================
+   7) Generated Link Collection Formatting
+   ======================================== */
+
+.preserve-formatting ul {
+    margin: 0.5rem 0 1.4rem;
+    padding-left: 1.2rem;
+}
+
+.preserve-formatting li {
+    margin-bottom: 0.25rem;
 }
 
 .preserve-formatting h1 {
-    margin-top: 5px;
-    margin-bottom: 10px; /* Adjust this value as needed */
+    margin-top: 1.45rem;
+    margin-bottom: 0.45rem;
+    color: #0f2d50;
+    font-size: 1.3rem;
+}
+
+.preserve-formatting p {
+    margin: 0.25rem 0;
 }
 
 .preserve-formatting br {
-    line-height: 0.2;
+    line-height: 0.32;
 }
 
-/* Books recommendation grid */
+/* ========================================
+   8) Books Grid
+   ======================================== */
 
 .books-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.3rem;
+    margin-top: 1.8rem;
 }
 
 .book-card {
     display: flex;
     flex-direction: column;
-    gap: 0.75rem;
-    padding: 1.5rem;
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    background: var(--entry);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    gap: 0.72rem;
+    padding: 1.35rem;
+    border: 1px solid rgba(181, 202, 233, 0.9);
+    border-radius: 18px;
+    background:
+        linear-gradient(160deg, rgba(0, 199, 232, 0.08), rgba(255, 67, 127, 0.03)),
+        rgba(252, 254, 255, 0.98);
+    box-shadow: 0 12px 28px rgba(20, 40, 72, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.book-card:hover {
+    transform: translateY(-3px);
+    border-color: rgba(0, 199, 232, 0.45);
+    box-shadow: 0 16px 32px rgba(20, 40, 72, 0.16);
 }
 
 .book-body {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.48rem;
 }
 
 .book-title {
     margin: 0;
+    color: #10233f;
 }
 
 .book-author {
-    margin: -0.5rem 0 0 0;
-    font-weight: 600;
-    color: var(--primary);
+    margin: -0.42rem 0 0;
+    font-weight: 700;
+    color: #1f3553;
 }
 
 .book-keywords {
     margin: 0;
     font-size: 0.9rem;
-    color: var(--secondary);
+    color: #476285;
 }
 
 .book-description {
     margin: 0;
-    line-height: 1.55;
-}
-
-@media (max-width: 680px) {
-    .book-card {
-        padding: 1.25rem;
-    }
+    color: #243650;
+    line-height: 1.6;
 }
 
 .books-grid__empty {
-    margin-top: 1.5rem;
+    margin-top: 1.4rem;
     font-style: italic;
     color: var(--secondary);
+}
+
+/* ========================================
+   9) Motion + Responsive
+   ======================================== */
+
+@keyframes rise-fade {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.profile_inner,
+.post-entry,
+.book-card {
+    animation: rise-fade 0.5s ease both;
+}
+
+@media only screen and (max-width: 900px) {
+    #homepage-content {
+        width: min(1110px, calc(100vw - 1rem));
+        border-radius: 18px;
+    }
+
+    .main .profile {
+        min-height: 62vh;
+        padding: 3rem 1rem;
+    }
+
+    .profile_inner {
+        padding: 1.5rem 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        background-attachment: scroll;
+    }
+
+    #homepage-content {
+        margin-top: 0.7rem;
+        background-position: center 26%;
+    }
+
+    .books-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .book-card {
+        padding: 1.15rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important;
+    }
 }

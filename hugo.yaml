@@ -49,6 +49,7 @@ minify:
   minifyOutput: true
 
 params:
+  defaultTheme: light
   disableThemeToggle: true
   profileMode:
     enabled: true
