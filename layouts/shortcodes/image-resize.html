@@ -1,3 +1,75 @@
+{{- $src := .Get "src" -}}
+{{- $alt := .Get "alt" | default "" -}}
+{{- $displayWidth := .Get "width" | default "100%" -}}
+{{- $sizes := .Get "sizes" -}}
+{{- $loading := .Get "loading" | default "lazy" -}}
+{{- $decoding := .Get "decoding" | default "async" -}}
+
+{{- $img := .Page.Resources.GetMatch $src -}}
+{{- if not $img }}{{- $img = .Page.Resources.GetMatch (printf "*%s" $src) -}}{{- end -}}
+{{- if not $img }}{{- $img = resources.Get (strings.TrimPrefix "/" $src) -}}{{- end -}}
+
+{{- if and $img (eq $img.MediaType.MainType "image") -}}
+  {{- $candidatePool := slice 320 480 640 768 960 1200 1440 1800 2200 -}}
+  {{- $srcsetParts := slice -}}
+
+  {{- range $w := $candidatePool -}}
+    {{- if le $w $img.Width -}}
+      {{- $resized := $img.Resize (printf "%dx" $w) -}}
+      {{- $srcsetParts = $srcsetParts | append (printf "%s %dw" $resized.RelPermalink $w) -}}
+    {{- end -}}
+  {{- end -}}
+  {{- if gt $img.Width 2200 -}}
+    {{- $srcsetParts = $srcsetParts | append (printf "%s %dw" $img.RelPermalink $img.Width) -}}
+  {{- end -}}
+
+  {{- $default := $img -}}
+  {{- if ge $img.Width 1200 -}}
+    {{- $default = $img.Resize "1200x" -}}
+  {{- else if ge $img.Width 960 -}}
+    {{- $default = $img.Resize "960x" -}}
+  {{- else if ge $img.Width 768 -}}
+    {{- $default = $img.Resize "768x" -}}
+  {{- end -}}
+
+  {{- if not $sizes -}}
+    {{- $desktopEstimate := 940 -}}
+    {{- if strings.HasSuffix $displayWidth "%" -}}
+      {{- $pct := int (strings.TrimSuffix "%" $displayWidth) -}}
+      {{- if gt $pct 0 -}}
+        {{- $desktopEstimate = div (mul 940 $pct) 100 -}}
+      {{- end -}}
+    {{- else if strings.HasSuffix $displayWidth "px" -}}
+      {{- $px := int (strings.TrimSuffix "px" $displayWidth) -}}
+      {{- if gt $px 0 -}}
+        {{- $desktopEstimate = $px -}}
+      {{- end -}}
+    {{- end -}}
+    {{- if gt $desktopEstimate $img.Width -}}
+      {{- $desktopEstimate = $img.Width -}}
+    {{- end -}}
+    {{- $sizes = printf "(max-width: 768px) 92vw, %dpx" $desktopEstimate -}}
+  {{- end -}}
+
 <div style="text-align: center; display: flex; justify-content: center;">
-    <img src="{{ .Get "src" }}" alt="{{ .Get "alt" }}" style="display: block; width: {{ .Get "width" }}; margin-left: auto; margin-right: auto;">
+    <img
+      src="{{ $default.RelPermalink }}"
+      srcset="{{ delimit $srcsetParts ", " }}"
+      sizes="{{ $sizes }}"
+      alt="{{ $alt }}"
+      loading="{{ $loading }}"
+      decoding="{{ $decoding }}"
+      width="{{ $default.Width }}"
+      height="{{ $default.Height }}"
+      style="display: block; width: {{ $displayWidth }}; max-width: 100%; height: auto; margin-left: auto; margin-right: auto;">
 </div>
+{{- else -}}
+<div style="text-align: center; display: flex; justify-content: center;">
+    <img
+      src="{{ $src }}"
+      alt="{{ $alt }}"
+      loading="{{ $loading }}"
+      decoding="{{ $decoding }}"
+      style="display: block; width: {{ $displayWidth }}; max-width: 100%; height: auto; margin-left: auto; margin-right: auto;">
+</div>
+{{- end -}}
